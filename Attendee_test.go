@@ -57,7 +57,7 @@ func TestAttendee_UnmarshalJSON(t *testing.T) {
 			name: "All good",
 			a:    &Attendee{},
 			args: args{data: []byte(
-				`{	"Type" : "organizer", 
+				`{	"Type" : "organizer",
 					"Status": {"response" : "accepted", "time" : "` + time.Now().Format(time.RFC3339Nano) + `"},
 					"emailAddress" : {
 						"name" : "TestUserName",
@@ -68,7 +68,7 @@ func TestAttendee_UnmarshalJSON(t *testing.T) {
 			name: "wrong json",
 			a:    &Attendee{},
 			args: args{data: []byte(
-				`{	"Type" : "organizer", 
+				`{	"Type" : "organizer",
 					"Status": {"response" : "accepted", "time" : "` + time.Now().Format(time.RFC3339Nano) + `"},
 					"emailAddress" : {
 						"name" : "TestUserName",

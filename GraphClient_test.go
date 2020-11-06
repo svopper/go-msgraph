@@ -8,9 +8,9 @@ import (
 
 // get graph client config from environment
 var (
-	msGraphTenantID                     = os.Getenv("MSGraphTenantID")
-	msGraphApplicationID                = os.Getenv("MSGraphApplicationID")
-	msGraphClientSecret                 = os.Getenv("MSGraphClientSecret")
+	msGraphTenantID                     = os.Getenv("TENANT")
+	msGraphApplicationID                = os.Getenv("APPID")
+	msGraphClientSecret                 = os.Getenv("SECRET")
 	msGraphExistingGroupDisplayName     = os.Getenv("MSGraphExistingGroupDisplayName")
 	msGraphExistingUserPrincipalInGroup = os.Getenv("MSGraphExistingUserPrincipalInGroup")
 )
